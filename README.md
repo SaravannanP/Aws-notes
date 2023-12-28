@@ -23,20 +23,21 @@ internally launched ...
  
 ### How to choose AWS region(exam qn)
  Depends on factors 
- - COMPLIANCE with data governance and legal requirements:
-   Data never leaves a region without explicit permission__ 
-   Eg: France data should stay in France so launch in the France region 
- - PROXIMITY to customers: reduced latency 
-   Eg: if the customer base is in America makes sense to deploy in America for reduced latency/lag 
- - AVAILABLE SERVICES within a region: new services 
-   and new features aren't available in every region
-   Eg: if leveraging a service with an app ensure the deployed region has that service available.
- - PRICING: Pricing varies from region to region and is transparent on the service pricing page
+ - COMPLIANCE with data governance and legal requirements:\
+   Data never leaves a region without explicit permission\
+   Example: France data should stay in France so launch in the France region 
+ - PROXIMITY to customers: Reduced latency  
+   Example: if the customer base is in America makes sense to deploy in America for reduced latency/lag 
+ - AVAILABLE SERVICES within a region: 
+   new services and new features aren't available in every region\
+   Example: if leveraging a service with an app ensure the deployed region has that service available.
+ - PRICING:\
+   Pricing varies from region to region and is transparent on the service pricing page\
    A factor for deployment into a specific region 
    
-### AWS Availability zones
- Each region has multiple availability zones Min 3  Max 6 Usually 3 
-  for example: 
+### AWS Availability zones (AZ)
+ Each region has multiple availability zones Min 3  Max 6 (Usually 3)\ 
+ Example: 
 			AWS region
 			Sydney: ap-southeast-2 
 			- ap-southeast-2a
@@ -56,8 +57,7 @@ internally launched ...
 
 
 
-- AWS Edge Locations/ Points of Presence
--------------------------------------------- 
+### AWS Edge Locations/ Points of Presence
 - Amazon has 400+ Points of presence in 90+ cities acorss 40+ countries 
 
 
