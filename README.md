@@ -24,7 +24,7 @@ internally launched ...
 ### How to choose AWS region(exam qn)
  Depends on factors 
  - COMPLIANCE with data governance and legal requirements:
-   Data never leaves a region without explicit permission 
+   Data never leaves a region without explicit permission__ 
    Eg: France data should stay in France so launch in the France region 
  - PROXIMITY to customers: reduced latency 
    Eg: if the customer base is in America makes sense to deploy in America for reduced latency/lag 
