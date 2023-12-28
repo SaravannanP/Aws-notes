@@ -1,12 +1,12 @@
 # Aws-notes
 Notes I've written down for the AWS developer exam
 
-# What is AWS
-AWS(Amazon web services) is a cloud provider 
+## What is AWS
+AWS(Amazon Web Services) is a cloud provider 
 - provide servers and services that can be used on demand 
   and scale easily.
 
-30 AWS services will be course 
+30 AWS services will be the course 
 
 
 2002 
@@ -14,16 +14,14 @@ internally launched ...
 
 # Section 3: Getting Started with AWS 
 
-# AWS global infra
-- AWS regions
-----------------------
+## AWS global infra
+### AWS regions
  - AWS has regions all around the world 
  - naming convention is us-east-1,eu-west-3
  - A region is a cluster of data centers 
  - Most AWS services are region-scoped
  
- # How to choose AWS region(exam qn)
- ------------------------------------
+### How to choose AWS region(exam qn)
  Depends on factors 
  - COMPLIANCE with data governance and legal requirements:
    Data never leaves a region without explicit permission 
@@ -36,12 +34,8 @@ internally launched ...
  - PRICING: Pricing varies from region to region and is transparent on the service pricing page
    A factor for deployment into a specific region 
    
-- AWS Availability zones
-----------------------  
- Each region has multiple availability zones 
-  Min 3  Max 6
-  Usually 3 
-  
+### AWS Availability zones
+ Each region has multiple availability zones Min 3  Max 6 Usually 3 
   for example: 
 			AWS region
 			Sydney: ap-southeast-2 
@@ -52,16 +46,13 @@ internally launched ...
 			- ap-southeast-2c
 			   - 2 - 4 data centers 
 	
-	
-	
-- AWS data centers
----------------------- 
+### AWS data centers
 - Each AZ is one or more discrete data centers with redundant power,
 	  networking and connectivity 
 		
-- They are seperate from each other so that they are isolated from disasters 
+- They are separate from each other so that they are isolated from disasters 
 	
-- They are connected with high bandiwidth ultra-low latency networking 
+- They are connected with high bandwidth ultra-low latency networking 
 
 
 
@@ -72,12 +63,12 @@ internally launched ...
 
 
 
-Tour of AWS console
+## Tour of AWS console
 - AWS has global service:
   - identity and Access Management(IAM)
   - Route 53 (DNS service)
-  - CloudFront (Contetn Delivery Network)
-  - WAF(Web applciation firewall)
+  - CloudFront (Content Delivery Network)
+  - WAF(Web application firewall)
 
 - Most AWS services are Region-scoped:
   Amazon EC2 (Infra as a service)
@@ -89,7 +80,7 @@ Tour of AWS console
   
  # Section 4: IAM  & AWS CLI 
  
- IAM section
+ ## IAM section
  - identity and access management, Global service 
  - Within IAM create users and assign them to groups
  - root account is an example, created by default shouldn't be used or shared
@@ -127,7 +118,7 @@ Tour of AWS console
  1. Naviagate to IAM in AWS console 
  2. click on users on the side panel
  Is not good practice to use a root account 
- So create users such as admin users to access account more safely 
+ So create users such as admin users to access accounts more safely 
  create user >[check] I want to create an IAM user 
  create group > [Check] administrator access policy 
  
