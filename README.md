@@ -8,7 +8,7 @@ AWS(Amazon Web Services) is a cloud provider
 
 30 AWS services covered 
 
-# Section 3: Getting Started with AWS 
+# Section 3: Getting Started with AWS  
 
 ## AWS global infra
 ### AWS regions
