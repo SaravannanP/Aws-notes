@@ -6,11 +6,7 @@ AWS(Amazon Web Services) is a cloud provider
 - provide servers and services that can be used on demand 
   and scale easily.
 
-30 AWS services will be the course 
-
-
-2002 
-internally launched ...
+30 AWS services covered 
 
 # Section 3: Getting Started with AWS 
 
@@ -22,7 +18,7 @@ internally launched ...
  - Most AWS services are region-scoped
  
 ### How to choose AWS region(exam qn)
- Depends on factors 
+ Depends on the following factors :
  - COMPLIANCE with data governance and legal requirements:\
    Data never leaves a region without explicit permission\
    Example: France data should stay in France so launch in the France region 
@@ -48,33 +44,27 @@ internally launched ...
 			   - 2 - 4 data centers 
 	
 ### AWS data centers
-- Each AZ is one or more discrete data centers with redundant power,
-	  networking and connectivity 
+- Each AZ is one or more discrete data centers with redundant power,networking and connectivity 
 		
 - They are separate from each other so that they are isolated from disasters 
 	
 - They are connected with high bandwidth ultra-low latency networking 
 
-
-
 ### AWS Edge Locations/ Points of Presence
 - Amazon has 400+ Points of presence in 90+ cities acorss 40+ countries 
 
-
-
-
 ## Tour of AWS console
-- AWS has global service:
+# AWS global services:
   - identity and Access Management(IAM)
   - Route 53 (DNS service)
   - CloudFront (Content Delivery Network)
   - WAF(Web application firewall)
 
-- Most AWS services are Region-scoped:
-  Amazon EC2 (Infra as a service)
-  Elastic Beanstalk(Platform as a service)
-  Lambda (function as a service)
-  Rekognition(software as a service) 
+# AWS region-scoped services:
+  - Amazon EC2 (Infra as a service)
+  - Elastic Beanstalk (Platform as a service)
+  - Lambda (function as a service)
+  - Rekognition (software as a service) 
   
   
   
@@ -88,7 +78,7 @@ internally launched ...
  - Groups can only contain users, not other groups !!!!!!
  - users do not have to belong to a group and users can belong to multiple groups 
  
- Example : 
+ Example : [ADD Pic]
  Group: Developers
  Alice, Bob, Charles 
  
