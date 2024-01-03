@@ -72,7 +72,7 @@ AWS(Amazon Web Services) is a cloud provider
  
  ## IAM section
  - identity and access management, Global service 
- - Within IAM create users and assign them to groups
+ - Within IAM create users and assign them to groups 
  - root account is an example, created by default shouldn't be used or shared
  - Users are people within the organization and can be grouped 
  - Groups can only contain users, not other groups !!!!!!
