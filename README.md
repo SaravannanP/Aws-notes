@@ -90,21 +90,21 @@ AWS(Amazon Web Services) is a cloud provider
  - Users or Groups can be assigned JSON documents called policies
    Example of a policy:
    ![Screenshot 2024-01-05 063243](https://github.com/SaravannanP/Aws-notes/assets/67651440/464b37fd-53a1-473b-b193-3dc38b64d8c5)
-   Short description on above policy:
-   Allow user to use ec2 instance and elastic load baalncing and cloudwatch.
+
+Short description on above policy:
+Allow user to use ec2 instance and elastic load baalncing and cloudwatch.
  - these policies define the permission of the users 
- - in AWS apply the least privilege principle: don't give more permissions than a user
-   needs 
-  Eg: if the user needs access to three services just create a permission
-			for that user 
+ - Apply the least privilege principle: don't give more permissions than a user needs 
+Example: if the user needs access to three services just create a permission for that user 
 
-
-- creating a user in IAM will be available everywhere and therefore tagged under global  
+creating a user in IAM will be available everywhere and therefore tagged under global  
  1. Naviagate to IAM in AWS console 
- 2. click on users on the side panel
- Is not good practice to use a root account 
- So create users such as admin users to access accounts more safely 
- create user >[check] I want to create an IAM user 
- create group > [Check] administrator access policy 
+ 2. Click on users on the side panel
+ 3. create user > [check] I want to create an IAM user 
+ 4. create group > [Check] administrator access policy
  
+Is not good practice to use a root account therefore create users such as admin users to access accounts more safely 
+
+## IAM Policies 
+
  
