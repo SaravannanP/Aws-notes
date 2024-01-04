@@ -10,7 +10,7 @@ AWS(Amazon Web Services) is a cloud provider
 
 # Section 3: Getting Started with AWS  
 
-## AWS global infra
+## 8. AWS Cloud Overview - Regions
 ### AWS regions
  - AWS has regions all around the world 
  - naming convention is us-east-1,eu-west-3
@@ -53,7 +53,7 @@ AWS(Amazon Web Services) is a cloud provider
 ### AWS Edge Locations/ Points of Presence
 - Amazon has 400+ Points of presence in 90+ cities acorss 40+ countries 
 
-## Tour of AWS console
+##  AWS Services
 # AWS global services:
   - identity and Access Management(IAM)
   - Route 53 (DNS service)
@@ -70,37 +70,32 @@ AWS(Amazon Web Services) is a cloud provider
   
  # Section 4: IAM  & AWS CLI 
  
- ## IAM section
- - identity and access management, Global service 
- - Within IAM create users and assign them to groups 
+ ## IAM introduction: Users,Groups,Policies
+ - Identity and access management, Global service 
+ - IAM service creates users and assign them to groups 
  - root account is an example, created by default shouldn't be used or shared
  - Users are people within the organization and can be grouped 
- - Groups can only contain users, not other groups !!!!!!
+ - Groups can only contain users, not other groups
  - users do not have to belong to a group and users can belong to multiple groups 
  
- Example : [ADD Pic]
- Group: Developers
- Alice, Bob, Charles 
- 
- Group: Audit Team 
- Charles, David 
- 
- Group: Operations
- David, Edward 
+ Example : ![Screenshot 2024-01-05 063027](https://github.com/SaravannanP/Aws-notes/assets/67651440/a505b339-6290-42e9-a930-45c2ed5ebdb6)
 
- Fred  
  
- 
+ ## IAM Users & Groups 
  Why create users and why create groups?
  - Allow users to use AWS accounts for that permissions are required to assign 
    users or groups 
  
  IAM: Permissions 
- - Users or Groups can be assigned JSON documents called policies 
+ - Users or Groups can be assigned JSON documents called policies
+   Example of a policy:
+   ![Screenshot 2024-01-05 063243](https://github.com/SaravannanP/Aws-notes/assets/67651440/464b37fd-53a1-473b-b193-3dc38b64d8c5)
+   Short description on above policy:
+   Allow user to use ec2 instance and elastic load baalncing and cloudwatch.
  - these policies define the permission of the users 
  - in AWS apply the least privilege principle: don't give more permissions than a user
    needs 
-  Eg: if the user needs access to  three services just create a permission
+  Eg: if the user needs access to three services just create a permission
 			for that user 
 
 
