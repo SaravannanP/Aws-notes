@@ -97,14 +97,30 @@ Allow user to use ec2 instance and elastic load baalncing and cloudwatch.
  - Apply the least privilege principle: don't give more permissions than a user needs 
 Example: if the user needs access to three services just create a permission for that user 
 
-creating a user in IAM will be available everywhere and therefore tagged under global  
+IAM as an entire service is a global service therefore is tagged under the global region 
+
  1. Naviagate to IAM in AWS console 
  2. Click on users on the side panel
- 3. create user > [check] I want to create an IAM user 
- 4. create group > [Check] administrator access policy
- 
+ 3. Create user > [Check] I want to create an IAM user
+ 4. Option to add user to existing group  or create group
+ 5. Create group > [Check] administrator access policy
+   - Enter group name > check policy named amin acces(Provide full access to AWS services)
+   - Add created user to created group 
 Is not good practice to use a root account therefore create users such as admin users to access accounts more safely 
-
+The user inherits directly the permission to whatever group they are attached to
+ 
 ## IAM Policies 
+IAM policies inheritance Example:
 
+![Screenshot 2024-01-05 084034](https://github.com/SaravannanP/Aws-notes/assets/67651440/b4ba6a78-abb2-44d7-81f6-106f0374a99d)
+
+First group of developers with a policy attached at the group level 
+THis policy is applied to every memeber of the developer group 
+
+Second group of operations with a different policy attached
+
+if Fred is a user and does not belong to a group.Possible that inline policy attached to fred 
+
+if Charles and david belong to the audti team they both inherit the policies from audit team as well as 
+the policies from the other teams 
  
