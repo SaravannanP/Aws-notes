@@ -125,5 +125,14 @@ if Charles and david belong to the audti team they both inherit the policies fro
 the policies from the other teams 
 
 IAM policies structure
-Consists of : 
-Version : Policy langugae version
+Consists of 
+ - Version : Policy langugae version, include "2012-10-17"
+ - Id : Identifier for policy
+ - Statement : Can be one or multiple
+   1. Sid is statement ID
+   2. Effect: Wheather the statement allows or denies access (Allow,Deny) 	*****
+   3. Principal : account/user/role to which this policy applied to 	 	*****
+   4. Action: List of API calls that will be allowed or denied based on effect.	*****
+   5. Resource: List of resources to which the actions applied to.		*****
+   6. Condition: conditions for when policy in in effect (optional)
+   
