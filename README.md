@@ -123,4 +123,7 @@ if Fred is a user and does not belong to a group.Possible that inline policy att
 
 if Charles and david belong to the audti team they both inherit the policies from audit team as well as 
 the policies from the other teams 
- 
+
+IAM policies structure
+Consists of : 
+Version : Policy langugae version
