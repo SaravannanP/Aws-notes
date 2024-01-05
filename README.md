@@ -124,8 +124,11 @@ if Fred is a user and does not belong to a group.Possible that inline policy att
 if Charles and david belong to the audti team they both inherit the policies from audit team as well as 
 the policies from the other teams 
 
-IAM policies structure
-Consists of 
+## IAM policies structure
+
+![Screenshot 2024-01-05 093845](https://github.com/SaravannanP/Aws-notes/assets/67651440/fabbb109-4bfd-46e4-963c-e1b497a89e15)
+
+Consists of
  - Version : Policy langugae version, include "2012-10-17"
  - Id : Identifier for policy
  - Statement : Can be one or multiple
@@ -135,4 +138,13 @@ Consists of
    4. Action: List of API calls that will be allowed or denied based on effect.	*****
    5. Resource: List of resources to which the actions applied to.		*****
    6. Condition: conditions for when policy in in effect (optional)
-   
+
+## IAM policies hands on 
+  1. Select user and remove from admin group(Root account)
+  2. Verify that the user is denied acces to the Users page (user account)
+  3. Observer that the removed user has 0 permission polocies (root account)
+  4. Add permissions for that user (root account)
+  5. [Check] Attach user policy directly option and search for IAMReadOnlyAccesss policy to attach to user (Allows user to read anything on IAM)
+  6. Add permission
+  7. Refresh page on user (useraccount)
+  8. 
