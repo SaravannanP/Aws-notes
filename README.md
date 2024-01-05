@@ -113,7 +113,7 @@ The user inherits directly the permission to whatever group they are attached to
 IAM policies inheritance Example:
 
 ![Screenshot 2024-01-05 084034](https://github.com/SaravannanP/Aws-notes/assets/67651440/b4ba6a78-abb2-44d7-81f6-106f0374a99d)
-
+ 
 First group of developers with a policy attached at the group level 
 THis policy is applied to every memeber of the developer group 
 
